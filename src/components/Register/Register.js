@@ -14,7 +14,7 @@ class Register extends React.Component {
   onPasswordChange = e => this.setState({ password: e.target.value });
   onNameChange = e => this.setState({ name: e.target.value });
   onSubmitSignIn = () => {
-    fetch("http://localhost:3001/register", {
+    fetch("https://agile-waters-73603.herokuapp.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
